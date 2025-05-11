@@ -1,0 +1,320 @@
+/************* General CSS ***************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: Arial, sans-serif;
+	position: relative;
+}
+
+.overlay-layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+}
+
+.action-container {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 20px;
+}
+
+input[type="submit"]{
+	border: none;
+	border-radius: 5px;
+	padding: 14px 30px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.button-primary {
+	color: #fff;
+	background-color: #0073E6;
+}
+
+.button-secondary {
+	color: #666666;
+	background-color: #E0E0E0;
+	border-inline: 1px solid #B0B0B0;
+}
+
+.button-primary:hover {
+	background-color: #0460bc;
+}
+
+.button-secondary:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+.field-error {
+	margin-left: 10px;
+    color: red;
+    font-size: 14px;
+}
+
+.inner-div {
+	width: 100%;
+	max-width: 750px;
+	min-width: 500px;
+	border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.page-title {
+	text-align: center;
+	font-size: 32px;
+}
+
+.meta-desc span {
+	color: red;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="file"] {
+	width: 60%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.form-field-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 25px;
+}
+
+.page-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.page-subtitle {
+	font-size: 24px;
+    color: #664220;
+    margin-bottom: 10px;
+}
+
+.desc {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.meta-desc {
+	font-size: 14px;
+}
+
+
+/************* Login Page ***************/
+
+.login-page-container {
+	background-image: url('../images/window-949098_1280.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.login-page-container .inner-div {
+	background: rgba(0,0,0, 0.3); /* semi-transparent background */
+	padding: 45px;
+	margin: 0 20px;
+}
+
+.login-page-container .page-title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 36px;
+}
+
+.login-page-container .desc {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.login-page-container .meta-desc {
+	color: rgba(255,255,255,0.7);
+}
+
+.login-form label {
+	color: #fff;
+}
+
+.login-form .form-field-container {
+	margin-bottom: 30px;
+}
+
+.login-form .field-error {
+	font-weight: bold;
+}
+
+.general-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+/************* Product Upload Page ***************/
+
+.product-container {
+	background-image: url('../images/creative-7581718_1280.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px 20px;
+}
+
+.product-container .inner-div {
+	background: rgba(255, 255, 255, 0.6); /* semi-transparent background */
+}
+
+.product-container .page-title {
+	padding: 25px;
+    color: #552f12;
+}
+
+.product-container .product-content-section {
+	padding: 20px 30px 40px 30px;
+}
+
+.product-container .meta-desc {
+	color: #353232;
+}
+
+/* Input fields */
+.product-container input[type="text"],
+.product-container input[type="file"],
+.product-container input[type="number"] {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.product-container label {
+	color: #562f12;
+}
+
+.price-wrapper {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0;
+    width: 60%; /* Adjust as needed */
+    background-color: #fff;
+}
+
+.price-wrapper span {
+    padding: 14px;
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    width: 40px;
+    text-align: center;
+}
+
+.price-wrapper input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 14px;
+    font-size: 16px;
+    color: #333;
+    flex: 1;
+    border-radius: 0 5px 5px 0; /* Round right side corners */
+}
+
+.product-cost-input-field {
+	display: flex;
+	align-items: center;
+}
+
+/************** Product Upload Thankyou page ************/
+
+.product-added-confirmation-page .content-section {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.product-added-confirmation-page p {
+	font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #593214;
+}
+
+.product-added-confirmation-page .link {
+	cursor: pointer;
+}
+
+/************* Navigation *****************/
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-bar {
+	width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(85, 47, 18, 0.8);
+    overflow: hidden; /* Ensures rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar li {
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(194, 166, 139, 0.6);
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #C2A68B;
+    color: #ffffff;
+}
+
